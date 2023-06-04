@@ -1,0 +1,70 @@
+.imagenes{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+@media (max-width: 768px) {
+    .imagenes {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    
+    }
+}
+
+.img1,
+.img2,
+.img3{
+    width: 400px;
+    height: 450px;
+    margin-top: 7%;
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .img1,
+    .img2,
+    .img3 {
+        width: 80%;
+       
+    }
+}
+
+.carousel-item img{
+    height: 350px;
+}
+
+
+h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: $color-primario;
+}
+
+.padre-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 150px;
+
+}
+
+h6{
+    color:$color-secundario !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 10px;
+}
+
+.hijo-datos img{
+   width: 30px;
+   margin-left: 80px;
+
+}

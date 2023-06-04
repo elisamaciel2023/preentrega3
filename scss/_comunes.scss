@@ -1,0 +1,220 @@
+
+body{
+    font-family: $fuente-principal;
+    background-color:$color-terciario;
+}
+
+.titulo,
+.subtitulo{
+    color:$color-primario;
+    font-family: $fuente-principal;
+    font-size: 50px;
+    font-weight: 700;
+    @media (max-width: 768px){
+        .titulo,
+        .subtitulo{
+        font-size: 30px;
+    }
+    }
+}
+
+.offcanvas-header{
+    background-color: #717175;
+}
+
+
+.navbar div{
+    color:coral;
+    font-size:$fuente-media;
+    font-weight: 300;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family:$fuente-principal;
+    font-size: $fuente-media;
+    color:$color-secundario;
+}
+
+a{
+    text-decoration: none;
+    font-family:$fuente-media;
+    font-size: $fuente-media;
+    color: $color-secundario;
+
+}
+
+.canvas-header{
+    background-color: #717175;
+}
+
+.dropdown-menu{
+    border: none;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 50px;
+    color:$color-secundario;
+    text-align: center;
+    padding-top:$espacio-medio;
+    text-decoration: underline;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes aparecer{
+    0%{
+    opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ 
+p{
+    text-align: center;
+    color:$color-secundario;
+    font-family:$fuente-principal;
+    font-size: $fuente-media;
+    font-weight: 100;
+}
+
+
+.padre-card{
+    @include flex-colum-centrado;
+    margin-bottom: 50px;
+
+}
+
+.card{
+    width: 20rem;
+    padding: 10px;    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap:8px;
+    border:none;
+    @media (max-width: $desktop) {
+        .card {
+        text-align: center;
+    }
+    }
+}
+
+.boton{
+    color:transparent;
+    font-weight: 200;
+    color:$color-secundario;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgb(206, 192, 192);
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+
+
+h3{
+    color: #282829;
+    text-align: center;
+    padding-top:60px;
+
+    
+}
+
+
+.padre-redes{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+
+.redes{
+    width: 40px;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 88px 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: $tablet) {
+    .footer.links {
+        @include flex-colum-centrado;
+}
+}
+
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color:$color-terciario; 
+    margin-left: 30px;
+    text-decoration:underline;
+    padding-bottom: 20px;
+    display:inline-block;
+    
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color:$color-terciario;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: $color-terciario;
+    padding-left: 6px;
+}
+
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color:aliceblue;
+
+}
+
+.social-links a:hover{
+    background-color:rgb(241, 250, 247);
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+    text-align: center;
+}
+    .foteer-links{
+            width: 100%;
+            margin-bottom: 30px;
+    }
+}
+
+
