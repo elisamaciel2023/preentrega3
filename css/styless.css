@@ -3,6 +3,10 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.offcanvas-body li a:hover {
+  color: coral;
+}
+
 .titulo,
 .subtitulo {
   color: rgb(219, 178, 178);
@@ -10,15 +14,13 @@ body {
   font-size: 50px;
   font-weight: 700;
 }
-@media (max-width: 768px) {
-  .titulo .titulo,
-  .titulo .subtitulo,
-  .subtitulo .titulo,
-  .subtitulo .subtitulo {
-    font-size: 30px;
+
+@media (max-width: 599px) {
+  .titulo,
+  .subtitulo {
+    font-size: 25px;
   }
 }
-
 .offcanvas-header {
   background-color: #717175;
 }
@@ -38,7 +40,7 @@ body {
 
 a {
   text-decoration: none;
-  font-family: 20px;
+  font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   color: #b2b2b2;
 }
@@ -53,7 +55,7 @@ a {
 
 h1 {
   font-family: "Courier New", Courier, monospace;
-  font-weight: 100;
+  font-weight: 99;
   font-size: 50px;
   color: #b2b2b2;
   text-align: center;
@@ -100,7 +102,7 @@ p {
   gap: 8px;
   border: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 599px) {
   .card .card {
     text-align: center;
   }
@@ -140,8 +142,8 @@ h3 {
   flex-direction: row;
 }
 
-@media (max-width: 768px) {
-  .footer.links {
+@media (max-width: 599px) {
+  .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,7 +198,7 @@ h3 {
   background-color: rgb(241, 250, 247);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .footer-row {
     text-align: center;
   }
@@ -249,6 +251,7 @@ h3 {
 .imagenes {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -264,18 +267,19 @@ h3 {
   width: 400px;
   height: 450px;
   margin-top: 7%;
-  max-width: 1200px;
+  max-width: 980px;
 }
 
 @media (max-width: 768px) {
   .img1,
   .img2,
   .img3 {
-    width: 80%;
+    width: 100%;
   }
 }
 .carousel-item img {
   height: 350px;
+  width: 99%;
 }
 
 h2 {
@@ -291,9 +295,18 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin-top: 150px;
+  margin-top: 145px;
 }
 
+@media (max-width: 768px) {
+  .padre-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+  }
+}
 h6 {
   color: #b2b2b2 !important;
   display: flex;

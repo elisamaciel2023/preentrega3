@@ -1,8 +1,14 @@
-
 body{
     font-family: $fuente-principal;
-    background-color:$color-terciario;
+    background-color: $color-terciario;
+
 }
+
+
+.offcanvas-body li a:hover{
+    color: coral;
+}
+
 
 .titulo,
 .subtitulo{
@@ -10,12 +16,13 @@ body{
     font-family: $fuente-principal;
     font-size: 50px;
     font-weight: 700;
-    @media (max-width: 768px){
-        .titulo,
-        .subtitulo{
-        font-size: 30px;
-    }
-    }
+}
+
+@media (max-width:599px) {
+    .titulo,
+    .subtitulo{
+        font-size: 25px;
+    } 
 }
 
 .offcanvas-header{
@@ -29,6 +36,7 @@ body{
     font-weight: 300;
 }
 
+
 .nav-link{
     text-decoration: none;
     font-family:$fuente-principal;
@@ -38,7 +46,7 @@ body{
 
 a{
     text-decoration: none;
-    font-family:$fuente-media;
+    font-family:$fuente-principal;
     font-size: $fuente-media;
     color: $color-secundario;
 
@@ -52,9 +60,10 @@ a{
     border: none;
 }
 
+
 h1{
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
+    font-weight: 99;
     font-size: 50px;
     color:$color-secundario;
     text-align: center;
@@ -101,7 +110,7 @@ p{
     align-content: center;
     gap:8px;
     border:none;
-    @media (max-width: $desktop) {
+    @media (max-width: 599px) {
         .card {
         text-align: center;
     }
@@ -125,9 +134,7 @@ h3{
     text-align: center;
     padding-top:60px;
 
-    
 }
-
 
 .padre-redes{
     display: flex;
@@ -148,12 +155,11 @@ h3{
     flex-direction: row;
 }
 
-@media (max-width: $tablet) {
-    .footer.links {
+@media (max-width: 599px) {
+    .footer {
         @include flex-colum-centrado;
 }
 }
-
 
 .footer-row {
     display: flex;
@@ -207,7 +213,7 @@ h3{
     background-color:rgb(241, 250, 247);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer-row {
     text-align: center;
 }
